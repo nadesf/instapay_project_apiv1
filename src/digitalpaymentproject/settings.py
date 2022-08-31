@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env(env_file=str(BASE_DIR / "api" / ".env"))
 
-SECRET_KEY = env("SECRET_KEY")
+SECRET_KEY = "6vrrm6)%qip#7tueq$5l%r%s1@l!$7abtx!^6xpj&m%_(hd&wg"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DEBUG", False)
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["devinstapay.pythonanywhere.com"]
 
 
 # Application definition
